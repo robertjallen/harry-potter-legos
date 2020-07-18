@@ -28,3 +28,16 @@ describe("jokes integration tests", () => {
 		// expect(res.body[0].name).toBe("sam")
 	})
 })
+
+
+test("POST  register", async () => {
+  const user = await supertest(server).post("/api/auth/register").send({
+    username: "my name123",
+    password: "abc123",
+  });
+
+  expect(user.statusCode).toBe(201);
+  expect(user.body.id).toBeDefined();
+  // expect(user.body.username).toBe("name123");
+  expect(user.body.password).toBeDefined;
+});
