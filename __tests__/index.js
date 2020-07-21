@@ -2,7 +2,7 @@ const supertest = require("supertest")
 const server = require("../api/server")
 const db = require("../database/dBConfig")
 const authRouter = require('../auth/auth-router.js');
-const jokesRouter = require('../jokes/jokes-router.js');
+const jokesRouter = require('../legos/legos-router.js');
 
 // // a global jest hook to run before each individual test
 // beforeEach(async () => {
