@@ -25,12 +25,17 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
+Jsonwebtokens can have an expiration date and would be stored in localStorage on the frontend like a wristband or access pass. This could be done in cookies or other ways. 
+
 
 2. What does `bcrypt` do to help us store passwords in a secure manner.
+for hashing, hashing passwords 
 
 3. How are unit tests different from integration and end-to-end testing.
+Units = Parts  integration is how the parts are working with the whole. E-E is testing the whole
 
 4. How _Test Driven Development_ changes the way we write applications and tests.
+write failing tests and write the code to make the tests pass
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
