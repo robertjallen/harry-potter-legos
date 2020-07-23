@@ -9,7 +9,7 @@ module.exports = {
 };
 
 function find() {
-  return db("legos").select("image", "name", "description");
+  return db("legos").select("id", "image", "name", "description");
 }
 
 function findBy(filter) {
