@@ -4,7 +4,8 @@ module.exports = {
   add,
   find,
   findBy,
-  findById
+  findById,
+  remove,
 };
 
 function find() {
@@ -20,6 +21,12 @@ async function add(lego) {
   const [id] = await db("legos").insert(lego);
 
   return findById(id);
+}
+
+function remove(ID){
+  return db('legos')
+  .where({ id: ID })
+  .del()
 }
 
 function findById(id) {

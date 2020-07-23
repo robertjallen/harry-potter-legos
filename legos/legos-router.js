@@ -28,4 +28,18 @@ router.post("/", async (req, res, next) => {
 	}
 })
 
+///////////////////
+//  DELETE
+/////////////////
+
+router.delete('/:id', async (req, res, next) => {
+  const { id } = req.params;
+	try {
+		const lego = await legos.remove(id)
+			res.status(201).json(lego)
+	} catch (error) {
+		next(err)
+	}
+});
+
 module.exports = router;
