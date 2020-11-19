@@ -36,7 +36,7 @@ router.delete('/:id', async (req, res, next) => {
   const { id } = req.params;
 	try {
 		const lego = await legos.remove(id)
-			res.status(201).json(lego)
+			res.status(201).json(id)
 	} catch (error) {
 		next(err)
 	}
